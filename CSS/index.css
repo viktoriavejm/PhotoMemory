@@ -1,0 +1,161 @@
+@font-face {
+    font-family: hand;
+    src: url(../Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+html{
+    font-family: var(--FontFamily_WholePage);
+    background-image: url(../Pictures/Unterseiten/Login/Collage1.jpg);
+    background-size: cover;
+    object-fit: cover;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* *{
+    outline: red dotted 1px;
+} */
+
+header{
+    text-align: center;
+    /* margin-top: 8%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+
+    background-color: rgba(255, 255, 255, 0.676);
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 3%;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+:root{
+    --FontFamily_WholePage: hand;
+    --InputBorder_Top: none;
+    --InputBorder_Bottom: solid 1px rgb(0, 0, 0);
+    --InputBorder_Left: none;
+    --InputBorder_Right: none; 
+    --ActiveInput_Outline: none;
+
+}
+
+#submit-Login{
+    margin-top: 5%;
+    font-family: var(--FontFamily_WholePage);
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.7em;
+
+    transition: all ease-in-out 0.1s;
+}
+
+#submit-Login:hover{
+    scale: 1.09;
+}
+
+#submit-Login:active{
+    scale: 0.9;
+}
+
+#username{
+    margin-top: 1%;
+    padding: 0.5%;
+    background: transparent;
+    /* border-radius: 20px;   */
+    border-bottom: var(--InputBorder_Bottom);
+    border-left: var(--InputBorder_Left);
+    border-right: var(--InputBorder_Right);
+    border-top: var(--InputBorder_Top);
+    font-family: var(--FontFamily_WholePage);
+    font-size: 0.8em;
+}
+
+#username:focus{
+    outline: var(--ActiveInput_Outline);
+    color: rgb(0, 0, 0);
+    /* font-family: var(--FontFamily_WholePage); */
+}
+
+#username::placeholder{
+    font-family: var(--FontFamily_WholePage);
+    color: rgb(0, 0, 0);
+}
+
+#LOGO > img{
+    width: 20%;
+}
+
+#head{
+    border-right: black solid 1px;
+}
+
+#errorMessage{
+    color: red;
+    font-size: large;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width:600px) {
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+
+        /* margin-top: 30%; */
+        margin: 0;
+        width: 90vw;
+        height: 96vh;
+    }
+
+    #head{
+        /* border-bottom: solid black 1px; */
+        border-right: none;
+        margin-top: vw;
+        margin: 0;
+        /* width: 100%;
+        height: 100%; */
+    }
+
+    #username{
+        /* margin-top: 20%; */
+        font-size: 1.2em;
+        
+        margin-bottom: 3vh;
+    }
+
+    #LOGO > img{
+        z-index: 5;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    #LOGO{
+        background-color: rgba(0, 0, 0, 0.548);
+        z-index: 5;
+    }
+
+    #content{
+        /* margin-top: 20vw; */
+        height: 96vh;
+    }
+}
+
+

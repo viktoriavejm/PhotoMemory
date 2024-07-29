@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - PhotoMemory</title>
+    <link rel="website icon" href="../Pictures/logoB.png">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../Javascript/data.js" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script src="../Javascript/home.js" defer></script>
+    
+</head>
+<body id="body">
+
+    <div id="Name">
+        <div id="sayHello"></div>
+
+        <div id="dropDown">
+            
+            <label for="touch"><span id="Category">Category                <span id="span2">></span> </span></label>               
+            <input type="checkbox" id="touch"> 
+
+            
+            <ul class="slide">
+                <li><a onclick="PhotoGen(1)">Animals</a></li> 
+                <li><a onclick="PhotoGen(2)" >Portraits</a></li>
+                <li><a onclick="PhotoGen(3)" >Food</a></li>
+                <li><a onclick="PhotoGen(4)" >Landscape</a></li>
+            </ul>
+        </div>    
+    
+            <!-- <div class="search-box">
+               
+                <input type="text" class="input-search" placeholder="Search ...">
+            </div>   -->
+        
+        
+        <section id="section6">
+            <img onclick="PhotoGen(8)" src="../Pictures/ava.png" alt="">
+        </section>
+    </div>
+
+    
+
+    <!-- Header wo steht auf welcher Unterseite man gerade ist -->
+    
+    <!-- Nav Bar auf der Seite  -->
+    <nav>
+        
+        <!-- <section id="section1">
+            <img  onclick="openNav()" id="logoB" src="../Pictures/pfeil.png" alt="logo">
+        </section> -->
+        <section id="section2">
+            <img onclick="PhotoGen(1)" src="../Pictures/noun-animals-19581461.png" alt="animals">
+        </section>
+        <section id="section3">
+            <img onclick="PhotoGen(2)" src="../Pictures/noun-portrait-1386707.png" alt="portrait">
+        </section>
+        <section id="section4">
+            <img onclick="PhotoGen(3)" src="../Pictures/noun-food-6260603.png" alt="food">
+        </section>
+        <section id="section5">
+            <img onclick="PhotoGen(4)" src="../Pictures/noun-landscape-1747104.png" alt="land">
+        </section>
+
+        <br><br>
+        <section id="section7">
+            <img onclick="PhotoGen(5)" src="../Pictures/gallery.png" id="gallery" alt="gallery">
+        </section>
+        <section id="section8">
+            <img onclick="PhotoGen(6)" src="../Pictures/settings.png" id="settings" alt="settings">
+        </section>
+        <section id="section9">
+            <img onclick="PhotoGen(7)" src="../Pictures/home.png" id="homes" alt="homes">
+        </section>
+    </nav>
+
+    <!-- <div id="Text-Nav-Klappe"></div> -->
+
+    <!-- <img src="../Pictures/Unterseiten/Home/burger.jpg" alt=""> -->
+
+
+    <!--  Section wo die ganzen Bilder angezeigt werden  -->
+    <section>
+        <div id="all"></div>
+    </section>
+
+    <section id="ProfilContent">
+
+    </section>
+<!-- 
+    <footer>
+
+    </footer> -->
+
+</body>
+</html>

@@ -1,0 +1,702 @@
+@font-face {
+    font-family: hand;
+    src: url(../Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+:root{
+  --widthNavStandard: 8vw;
+  --FontAllPages: hand;
+
+  --text: #3d3a54;
+  --background: #fbfbfe;
+  --primary: #ffffff;
+  --secondary: #dddbff;
+  --accent: #c6c3ff;
+
+  /* --text_Darkmode: #ffffff;
+  --background_Darkmode: #474747;
+  --primary_Darkmode: #a6a6a6;
+  --secondary_Darkmode: #fefefe;
+  --accent_Darkmode: #b9b9b9; */
+}
+
+html{
+    font-family: var(--FontAllPages);
+    
+}
+/* 
+*{
+    outline: red dotted 1px;
+} */
+
+body{
+  height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: var(--background);
+    /* overflow-y: hidden; */
+    /* backdrop-filter: blur() ; */
+    
+}
+
+
+nav{
+  padding-top: 6.5vw;
+  margin-top: 5%;
+  position: absolute;
+  height: 100%;
+  width: var(--widthNavStandard);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 90;
+  background-color: #ffffff;
+  /* border-radius: 0 40px 40px 0;     */
+  text-align: center;
+
+  -webkit-box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+
+  position: fixed;
+
+  z-index: 9;
+}   
+
+section > img{
+    width: 3.5vw;
+    margin: 1vw;
+    
+}
+
+
+#Name{
+  width: 100vw;
+  background-color: #3d3a54;
+  height: 11vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-auto-rows: minmax(auto, 100%); /* Hier wird die Höhe der Rasterzeilen festgelegt */
+
+  position: fixed;
+  top: 0;
+  padding: 0 0 0 2vw;
+  z-index: 1000;
+
+}
+
+#sayHello{
+    /* padding: 1%; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 3em;
+    /* overflow-y: hidden; */
+
+    /* position: fixed; */
+   
+
+}
+
+/* #allImgs{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 2%;
+    padding: 1%;
+} */
+
+#section6 > img{
+    width: 3vw;
+    margin-left: 49%;
+   transition: all ease-in-out 0.2s;
+
+}
+
+#section7 > img, #section8 > img, #section9 > img{
+    width: 2vw;
+ 
+}
+
+/* #section9 > img{
+    border-bottom: solid black 2px;
+    padding-bottom: 3%;
+
+} */
+#current{
+    border-bottom: solid black 2px;
+    padding-bottom: 3%;
+}
+
+#section7> img:hover, #section8> img:hover, #section9> img:hover{
+    scale: 1.09;
+    cursor: pointer;
+}
+#section1> img:hover, #section2> img:hover, #section3> img:hover{
+    scale: 1.09;
+    cursor: pointer;
+}
+#section4> img:hover, #section5 > img:hover, #section6 > img:hover{
+    scale: 1.09;
+    cursor: pointer;
+}
+#section7> img:hover, #section8> img:hover, #section9> img:hover{
+   transition: all ease-in-out 0.2s;
+}
+#section1> img:hover, #section2> img:hover, #section3> img:hover{
+   transition: all ease-in-out 0.2s;
+    
+}
+#section4:hover, #section5:hover, #section6:hover{
+    transition: all ease-in-out 0.2s;
+   
+}
+
+#logoB{
+    rotate: -90deg;
+    text-align: right;
+}
+
+#all{
+    /* display: grid;
+    grid-template-columns: 100%;
+    margin: 10vw 4vw 0 17vw ; 
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2vw;
+    z-index: -1;
+
+}
+
+.row > img {
+    gap: 1vw;
+    /* width: 15vw; */
+    /* margin: 1%; */
+    height: 25vw;
+    width: 18vw;
+    margin: 2%;
+    object-fit: cover;
+}
+
+
+#section1 > img{
+    width: 2vw;
+    margin-left: 1vw;
+    margin-bottom: 2.5vw;
+
+}
+
+section > img{
+    width: 2vw;
+}
+
+/* Hover Effect Pictures ************************************** */
+.flex-container{
+  font-family: 'Open Sans', sans serif;
+  font-size: 120px;
+  font-weight: bold;
+
+  width: 15vw;
+  height: 25vw;
+  margin: 1%;
+
+  border-radius: 10px;
+}
+
+.row{
+  position: relative;
+
+  height: 100%;
+
+  border-radius: 10px;
+
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back{
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  justify-content: center;
+  /* align-items: center; */
+  backface-visibility: hidden;
+}
+
+.back > #divBox > h1{
+  font-size: 2em;
+  text-align: center;
+}
+
+#divBox{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+.front > img{
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* padding: 1vw; */
+  transform: rotateY(180deg);
+  font-size: 0.1em;
+  /* text-align: center; */
+  color: #000000;
+  background-size: cover;
+  /* background: linear-gradient(to right,rgb(198, 198, 255), var(--text)); */
+}
+
+
+  /* Search Bar *********************************** */
+
+   
+ /* .search-box{
+    width: 50%;
+    margin-top: 0;
+    z-index: 1001;
+  } 
+  .input-search{
+    margin-top: 0.5vw;
+    margin-left: 12vw;
+    width: 1vw;
+    height: 2.5vw;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 35px;
+    transition: all .5s ease-in-out;
+    background-color: #5870a8;
+    padding-right: 40px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 12vw;
+    height: 12vw;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search ~ .input-search{
+    width: 2.5vw;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    border-left:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search{
+    width: 10vw;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    border-left:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+  .slide > li > a:hover{
+    cursor: pointer;
+  } */
+  
+#Banner{
+    height: 12vw;
+    margin: 4.7vw 0 0 7vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #ProfilB{
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    margin: 12vw 0 0 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    z-index: 60;
+  }
+
+  #ProfilB > img{
+    /* margin: 4.5vw 0 0 0; */
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 6;
+
+    position: fixed;
+    top: 3;
+    left: 5;
+  }
+
+  
+
+  #showuser{
+    /* background-color: var(--primary_Lightmode); */
+    background-color:var(--secondary);
+    -webkit-box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    /* position: sticky; */
+    /* top: 12vw; */
+    display: grid;
+    align-items: center;
+    /* margin: 0; */
+    /* margin: 10vw 0 0 0; */
+    padding: 1%;
+    /* margin-top: 1vw; */
+    margin: 0;
+    /* padding: 1%; */
+    text-align: center;
+    font-size: 1.3em;
+    position: fixed;
+    width: 8vw;
+    color: var(--text);
+
+  }
+
+  #showpic{
+    /* padding: 1%;s */
+    margin-top: -4vw;
+    text-align: center;
+    /* background-color: var(--primary_Lightmode); */
+    background-color:var(--secondary);
+    -webkit-box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+    box-shadow: 12px 6px 30px -6px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    /* position: sticky; */
+    /* top: 0; */
+    padding: 1%;
+    width: auto;
+    z-index: 5;
+    /* margin: 0 0 0 25vw; */
+    color: var(--text);
+  }
+  
+  #content{
+    display: grid;
+    grid-template-columns: 13% 75%;
+    /* margin: 5vw 0 0 0; */
+    width: 100%;
+    text-align: center;
+    /* overflow-y: scroll; */
+    gap: 4vw;
+    margin-top: 1.9vw;
+    grid-auto-rows: minmax(auto, 100%); /* Hier wird die Höhe der Rasterzeilen festgelegt */
+
+  }
+
+  #ProfilContent{
+    margin: 0 7vw 0 14vw;
+  }
+
+  h5{
+    margin: 0;
+    padding: 0;
+  }
+
+  #Pics{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 1vw 4vw 0 4vw;
+    overflow-y: scroll;
+    /* padding: 3%; */
+    overflow-x: hidden;
+
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+    height: 20vw;
+    
+  }
+
+
+
+  /* Responsive *****************************+ */
+
+  @media (max-width: 1300px){
+    #Banner{
+      height: 15vw;
+      margin: 4.7vw 0 0 7vw;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #ProfilB{
+      border-radius: 50%;
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+      margin: 14vw 0 0 0;
+  
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;    
+      z-index: 60;
+    }
+
+    #ProfilB > img{
+      /* margin: 4.5vw 0 0 0; */
+      width: 11vw;
+      height: 11vw;
+      overflow: hidden;
+      border-radius: 50%;
+      z-index: 6;
+  
+      position: fixed;
+      top: 3;
+      left: 5;
+    }
+
+    #Pics{
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      margin: 1vw 4vw 0 4vw;
+      overflow-y: scroll;
+      /* padding: 3%; */
+      overflow-x: hidden;
+  
+      -ms-overflow-style:none;
+      scrollbar-width: none;
+      height: 35vw;
+      
+    }
+
+    #showuser{
+      font-size: 2em;
+    }
+
+    #showpic{
+      font-size: 2em;
+    }
+
+    #section6 > img{
+      width: 5vw;
+    }
+
+    #sayHello{
+      font-size: 4.5em;
+    }
+
+    nav{
+      padding-top: 9vw;
+    }
+  }
+
+  @media (max-width: 800px){
+    #Banner{
+      height: 20vw;
+      margin: 4.7vw 0 0 7vw;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #ProfilB{
+      border-radius: 50%;
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+      margin: 17.5vw 0 0 0;
+  
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;    
+      z-index: 60;
+    }
+
+    #ProfilB > img{
+      /* margin: 4.5vw 0 0 0; */
+      width: 12vw;
+      height: 12vw;
+      overflow: hidden;
+      border-radius: 50%;
+      z-index: 6;
+
+      position: fixed;
+      top: 3;
+      left: 5;
+    }
+
+    #showpic{
+      margin-top: 2vw;
+    }
+
+    #showuser{
+      margin-top: 1vw;
+      width: 9.5vw;
+    }
+
+    #Pics{
+      height: 40vw;
+    }
+
+    nav{
+      padding-top: 9vw;
+      width: 9vw;
+    }
+  }
+
+  @media (max-width: 800px){
+    #Banner{
+      height: 29vw;
+      margin: 4.7vw 0 0 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #ProfilB img{
+      width: 15vw;
+      height: 15vw;
+      overflow: hidden;
+      border-radius: 50%;
+      z-index: 6;
+  
+      position: fixed;
+      top: 3;
+      left: 5;
+    }
+
+    #ProfilB{
+      border-radius: 50%;
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+      margin: 26vw 0 0 0;
+  
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;    
+      z-index: 60;
+    }
+
+    #showpic{
+      margin-top: 3vw;
+      width: 90%;
+      margin-left: 8vw;
+    }
+
+    #showuser{
+      margin-top: 4vw;
+      width: 12vw;
+    }
+
+    #Pics{
+      display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1vw 4vw 0 4vw;
+    overflow-y: scroll;
+    /* padding: 3%; */
+    overflow-x: hidden;
+
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+      display: grid;
+      grid: 50% 50%;
+      height: 38vw;
+      margin-left: 15vw;
+      
+    }
+
+    .row{
+        height: 24vw;
+      	width: 18vw;
+    }
+
+    nav{
+      margin: 90vh 0 0 0;
+      width: 100vw;
+      display: flex;
+      padding-top: 2vw;
+      /* text-align: center; */
+      gap: 3vw;
+      /* align-items: center; */
+      justify-content: center;
+    }
+
+    #section6 img{
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      margin-right: 8vw;
+      height: 90%;
+    }
+    section > img{
+      width: 5vw;
+      /* margin-right: 7vw; */
+      /* gap: 230vw; */
+      margin-bottom: 1vw;
+    }
+
+    #section7 > img, #section8 > img, #section9 > img{
+      width: 5vw;
+   
+  }
+  }
+
+  

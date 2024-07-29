@@ -1,0 +1,207 @@
+@font-face {
+    font-family: hand;
+    src: url(../Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+:root {
+  --widthNavStandard: 8vw;
+  --FontAllPages: hand;
+
+  --text: #3d3a54;
+  --background: #fbfbfe;
+  --primary: #ffffff;
+  --secondary: #ebeaff;
+  --accent: #c6c3ff;
+
+  /* --text_Darkmode: #ffffff;
+  --background_Darkmode: #474747;
+  --primary_Darkmode: #a6a6a6;
+  --secondary_Darkmode: #fefefe;
+  --accent_Darkmode: #b9b9b9; */
+
+}
+
+html{
+  font-family: var(--FontAllPages);
+  
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+    z-index: 1;
+
+}
+
+nav{
+  padding-top: 6.5vw;
+    margin-top: 5%;
+    position: absolute;
+    height: 100%;
+    width: var(--widthNavStandard);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 90;
+    background-color: #ffffff;
+    /* border-radius: 0 40px 40px 0;     */
+    text-align: center;
+
+    -webkit-box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+box-shadow: 12px 2px 39px -12px rgba(0,0,0,0.75);
+
+    position: fixed;
+
+    z-index: 9;
+}  
+
+section>img {
+    width: 3.5vw;
+    margin: 1vw;
+
+}
+
+#Name{
+    width: 100vw;
+    background-color: #3d3a54;
+    height: 11vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(auto, 100%); /* Hier wird die Höhe der Rasterzeilen festgelegt */
+
+    position: fixed;
+    top: 0;
+    padding: 0 0 0 2vw;
+    z-index: 1000;
+
+}
+
+#sayHello{
+    /* padding: 1%; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 3em;
+    /* overflow-y: hidden; */
+    font-family: hand;
+
+    /* position: fixed; */
+   
+
+}
+
+/* #allImgs{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 2%;
+    padding: 1%;
+} */
+
+#section6>img {
+    width: 3vw;
+    margin-left: 80%;
+    transition: all ease-in-out 0.2s;
+
+}
+
+#section7 > img, #section8 > img, #section9 > img{
+  width: 2vw;
+
+}
+
+/* #section9 > img{
+    border-bottom: solid black 2px;
+    padding-bottom: 3%;
+
+} */
+#current {
+    border-bottom: solid black 2px;
+    padding-bottom: 3%;
+}
+
+#section7>img:hover,
+#section8>img:hover,
+#section9>img:hover {
+    scale: 1.09;
+    cursor: pointer;
+}
+
+#section1>img:hover,
+#section2>img:hover,
+#section3>img:hover {
+    scale: 1.09;
+    cursor: pointer;
+}
+
+#section4>img:hover,
+#section5>img:hover,
+#section6>img:hover {
+    scale: 1.09;
+    cursor: pointer;
+}
+
+#section7>img:hover,
+#section8>img:hover,
+#section9>img:hover {
+    transition: all ease-in-out 0.2s;
+}
+
+#section1>img:hover,
+#section2>img:hover,
+#section3>img:hover {
+    transition: all ease-in-out 0.2s;
+
+}
+
+#section4:hover,
+#section5:hover,
+#section6:hover {
+    transition: all ease-in-out 0.2s;
+
+}
+
+#logoB {
+    rotate: -90deg;
+    text-align: right;
+}
+
+
+#section1>img {
+    width: 2vw;
+    margin-left: 1vw;
+    margin-bottom: 2.5vw;
+    /* margin-top: 8vw; */
+
+}
+
+section>img {
+    width: 2vw;
+} 
+
+
+/* Galleryy *********************************** */
+
+
+
+.sliders{
+  /* width: 50vw;
+  height: 83vh;*/
+  object-fit: cover;
+  /* margin: 0 1vw 0 1vw;  */
+  height: 40vw;
+  width: 100%;
+}
+
+/* .slides{
+  margin  : 0;
+  padding: 0;
+}
+  */
+
+.reveal{
+  /* padding: 0; */
+  margin-top: 2.5vw;
+} 
